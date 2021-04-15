@@ -6,13 +6,16 @@ public class Temperature
         property "com.fasterxml.jackson.annotation.JsonTypeName" "temperature"
         property "de.generated" "true"
 {
-    domain {static cold, static hot, static warm}
+    domain {static cold, static hot, static testMe, static warm}
     public static final readonly Temperature cold
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "cold";
     public static final readonly Temperature hot
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "hot";
+    public static final readonly Temperature testMe
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "test me";
     public static final readonly Temperature warm
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "warm";
@@ -25,7 +28,7 @@ public class Weather
 {
     public java.lang.Long rainForecast
                 property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "rain forecast"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "rainForecast"
                 property update "true";
     public boolean stormAlert1
                 property "ads.attributeId" "3"

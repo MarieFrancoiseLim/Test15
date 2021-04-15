@@ -3,6 +3,7 @@
 Temperature#concept.label = temperature
 Temperature.cold#instance.label = cold
 Temperature.hot#instance.label = hot
+Temperature.testMe#instance.label = test me
 Temperature.warm#instance.label = warm
 
 # Weather
